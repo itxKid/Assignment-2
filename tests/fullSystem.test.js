@@ -1,4 +1,9 @@
-createDatabase(":memory:")
+const createDatabase = require("../src/database");
+const EventRepository = require("../src/repositories/eventRepository");
+const AttendeeRepository = require("../src/repositories/attendeeRepository");
+const EventService = require("../src/services/eventService");
+const AttendanceService = require("../src/services/attendanceService");
+const ReportGenerator = require("../src/reports/reportGenerator");
 
 test("register attendee is stored and retrievable", () => {
   const db = createDatabase(":memory:");

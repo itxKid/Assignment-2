@@ -1,4 +1,4 @@
-const Database = require("sqlite3");
+createDatabase(":memory:")
 
 function createDatabase(dbFile = "event.db") {
   const db = new Database(dbFile);

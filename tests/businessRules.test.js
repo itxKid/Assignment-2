@@ -1,5 +1,5 @@
-const EventService = require("../../src/services/eventService");
-const AttendanceService = require("../../src/services/attendanceService");
+const EventService = require("../src/services/eventService");
+const AttendanceService = require("../src/services/attendanceService");
 
 test("should throw error if event name is empty", () => {
   const mockRepo = { save: jest.fn() };
